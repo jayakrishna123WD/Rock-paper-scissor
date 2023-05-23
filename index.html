@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="rpss.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    
+    <div class="a">
+        <div class="circle"></div>
+    </div>
+    
+    <main>
+        <div class="header" id="title">
+            <h1 id="gametitle">Rock Paper Scissor</h1>
+        </div>
+        <div class="player1 sameout" id="p1">
+            <div class="select">
+                <h1>Select Player 1</h1>
+            </div>
+            <div class="players samein">
+                <div class="play1 one"><img id="chiru" src="chiru.jpg" alt="chiru image" height="120" width="100"></div>
+                <div class="play2 one"><img id="nani" src="nani.jpg" alt="nani image" height="120" width="100"></div>
+                <div class="play3 one"><img id="ntr" src="ntr.jpg" alt="ntr image" height="120" width="100"></div>
+                <div class="play4 one"><img id="venkatesh" src="venkatesh.jpg" alt="venkatesh image" height="120" width="100"></div>
+            </div>
+        </div>
+        <div class="player2 sameout" id="p2">
+            <div class="select">
+                <h1>Select Player 2</h1>
+            </div>
+            <div class="players samein">
+                <div class="play1 one"><img id="alluarjun" src="alluarjun.jpg" alt="alluarjun image" height="120" width="auto"></div>
+                <div class="play2 one"><img id="balakrishna" src="balakrishna.jpg" alt="balakrishna image" height="120" width="auto"></div>
+                <div class="play3 one"><img id="pawankalyan" src="pawankalyan.jpg" alt="pawankalyan image" height="120" width="auto"></div>
+                <div class="play4 one"><img id="nagarjuna" src="nagarjuna.jpg" alt="nagarjuna image" height="120" width="auto"></div>
+            </div>
+        </div>
+        <div class="game" id="maingame">
+            <div class="block">
+                <div class="com">
+                    <div class="imgs"><p id="comp">&#9994;&#127995;</p></div>
+                </div>
+                <div class="yourblock">
+                    <div class="imgs"><p id="mine">&#9994;&#127995;</p></div>
+                    <div class="options">
+                        <div class="ro"><p id="rock">&#129704;</p></div>
+                        <div class="pa"><p id="pap">&#128220;</p></div>
+                        <div class="sc"><p id="scis">&#9986;</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="playerScore">
+                <div id="player1Score">
+                    <img id="p1s" src="" alt="" height="120" width="auto">
+                    <p id="ds1">0</p>
+                </div>
+                <div id="player2Score">
+                    <img id="p2s" src="" alt="" height="120" width="auto">
+                    <p id="ds2">0</p>
+                </div>
+            </div>
+            <div class="reset">
+                <button id="rs">RESET</button>
+            </div>
+        </div>
+        <div class="result" id="res">
+            <h1 id="outtext">Winner</h1>
+            <img src="" alt="" id="output">
+            <div class="choices">
+                <button id="restart">Restart</button>
+                <button id="end">End Game</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

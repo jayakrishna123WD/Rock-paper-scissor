@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+/*start of preloader*/
+.a{
+    display: block;
+    position: fixed;
+    background-color: rgb(171, 147, 207);
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+}
+.circle{
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    border: solid 5px rgb(171, 147, 207);
+    border-top: 5px dashed rgb(0, 0, 0);
+    animation: rot infinite ease 2s;
+}
+@keyframes rot{
+    to{
+        transform: rotate(360deg);
+    }
+}
+.loaded{
+    opacity: 0;
+    display: none;
+}
+#bod{
+    height: 300vh;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*End of preloader*/
+
+/*start of main content*/
+.header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1.3em;
+    text-align: center;
+    margin: 1.3em;
+    text-shadow: 2px 4px 2px rgb(156, 105, 223), 2px 8px 2px rgb(255, 255, 255);
+}
+.sameout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.samein{
+    margin: 1.3em;
+    padding: 1.3em;
+    min-height: 250px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgb(147, 147, 241);
+    background-color: lavender;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3em;
+}
+.select{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 1.3em;
+}
+.one img{
+    border-radius: 50%;
+    cursor: pointer;
+}
+.one img:hover{
+    box-shadow: 8px 0 0 rgb(200, 128, 242);
+}
+.one img:active{
+    box-shadow: 3px 0 0 rgb(200, 128, 242);
+    transform: translateX(5px);
+}
+
+.block{
+    margin: 0.2em;
+}
+.imgs{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 2.5em auto;
+    font-size: 2.3em;
+    text-align: center;
+}
+.options{
+    display: flex;
+    justify-content: center ;
+}
+.ro, .pa, .sc{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(0, 0, 0);
+    margin: 0 1.2em;
+    font-size: 2.2em;
+    cursor: pointer;
+}
+.playerScore{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+}
+#player1Score, #player2Score{
+    border: 3px solid green;
+    display: inline-block;
+    height: 50px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#player1Score img, #player2Score img{
+    height: 50px;
+    width: auto;
+    background-color: white;
+    border-radius: 50%;
+    transform: scale(1.6);
+}
+#player1Score{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#player2Score{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.reset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+}
+.reset button, .choices button{
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    box-shadow: 5px 5px 0 rgb(144, 80, 80);
+    cursor: pointer;
+}
+.reset button:active, .choices button:active{
+    box-shadow: 2px 2px 0 rgb(144, 80, 80);
+    transform: translateY(4px);
+}
+
+#output{
+    height: 120px;
+    width: auto;
+    border-radius: 50%;
+    position: relative;
+    top: 2em;
+    bottom: 2em;
+    left: 35%;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
+.choices button{
+    margin: 1em;
+}
+.result h1{
+    text-align: center;
+    margin: 1.4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2em;
+    flex-direction: column;
+    position: relative;
+}
+
+.player2, .game, .result{
+    display: none;
+}
